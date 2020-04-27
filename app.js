@@ -171,4 +171,15 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[currentIndex].classList.add('frog')
     }
   }
+
+  //all the functions that move pieces
+  function movePieces() {
+    currentTime--                          // countdown minus one every second!
+    timeLeft.textContent = currentTime
+    autoMoveCars()
+    autoMoveLogs()
+    moveWithLogLeft()
+    moveWithLogRight()
+    lose()
+  }
 });

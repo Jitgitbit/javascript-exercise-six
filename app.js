@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentTime = 20
   let timerId
 
+  //render frog on starting block
+  squares[currentIndex].classList.add('frog')
+
   //move the Frog
   function moveFrog(e) {
     squares[currentIndex].classList.remove('frog')
